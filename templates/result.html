@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Dictionary Result</title>
+  </head>
+  <body>
+    <h1>Chat Dictionary Result</h1>
+    <!-- ... 401053484 ... -->
+    <table border="1">
+      <tr>
+        <th>Category</th>
+        <th>Score</th>
+      </tr>
+      {% for key, value in chat_dic.items() %}
+      <tr>
+        <td>{{ key }}</td>
+        <td>{{ value }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    <a href="/">Back to input</a>
+  </body>
+</html>
